@@ -1,15 +1,19 @@
 let addToy = false;
+const dom = new DomService()
+const api = new ApiService("http://localhost:3000")
+Toy.getAll()
+Toy.addEventListeners()
 
-document.addEventListener("DOMContentLoaded", () => {
-  const addBtn = document.querySelector("#new-toy-btn");
-  const toyFormContainer = document.querySelector(".container");
-  addBtn.addEventListener("click", () => {
+
+  dom.addBtn.addEventListener("click", () => {
     // hide & seek with the form
     addToy = !addToy;
     if (addToy) {
-      toyFormContainer.style.display = "block";
+      dom.toyFormContainer.style.display = "block";
     } else {
-      toyFormContainer.style.display = "none";
+      dom.toyFormContainer.style.display = "none";
     }
   });
-});
+
+
+

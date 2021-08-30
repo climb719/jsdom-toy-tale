@@ -38,7 +38,7 @@ body {
   width: auto;
 }
 
-button {
+.like-btn {
   position: relative;
   background-color: #e04b52;
   border: none;
@@ -47,6 +47,18 @@ button {
   width: max-content;
   color: whitesmoke;
   font-size: 18px;
+  justify-self: center;
+}
+
+.delete-btn {
+  position: relative;
+  background-color: lightgray;
+  border: none;
+  border-radius: 2px;
+  height: 2rem;
+  width: max-content;
+  color: black;
+  font-size: 11px;
   justify-self: center;
 }
 
